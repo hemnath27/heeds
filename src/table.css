@@ -1,0 +1,71 @@
+.delete_button
+{
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+
+.save_button
+{
+    color: white;
+    background-color: green;
+    border: none;
+    padding: 5px 10px;
+}
+
+.edit_button
+{
+    color: white;
+    background-color: orange;
+    border: none;
+    padding: 5px 10px;
+}
+
+.export_button
+{
+    color: #000;
+    border: none;
+    background-color: #E1AB00;
+    font-weight: 500 ;
+}
+
+.search_input
+{
+    /* border: 1px black; */
+    background-color: aliceblue;
+    padding-top: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.input_name, .input_age, .input_location
+{
+    /* margin: 10px 0; */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.table_row
+{
+    font-size: 20px;
+
+}
+
+.ikexHN
+{
+    
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.brFloq
+{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}

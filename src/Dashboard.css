@@ -1,0 +1,20 @@
+.logo_img1
+{
+    width: 150px;
+}
+.nav-link
+{
+    color: black;
+    font-weight: 500;
+
+}
+.nav 
+{
+    margin-right: 50px;
+    justify-content: center;
+    display: flex;
+}
+.navbar_dash
+{
+    background-color: azure;
+}
