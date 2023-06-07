@@ -1,0 +1,10 @@
+.download_button
+{
+border: none;
+margin: 10px 10px;
+padding: 10px 20px;
+border-radius: 7px;
+background-color: #E1AB00;
+color: #000;
+font-weight: 500;
+}

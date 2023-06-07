@@ -8,6 +8,7 @@ import Test from './test';
 import Chart from './chart';
 import Table from './table';
 import Profile from './profile';
+import Pdf from './df';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/chart" element={<Chart />} />
         <Route path="/table" element={<Table />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/df" element={<Pdf />} />
 
       </Routes>
     </BrowserRouter>

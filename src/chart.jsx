@@ -28,7 +28,7 @@ export function Chart() {
     <div className="container-lg">
       <div className="row justify-content-center mt-5">
         <div className="col-lg-4">
-          {chartData ? (
+           {chartData ? (
             <Doughnut
               data={{
                 labels: chartData.labels,
