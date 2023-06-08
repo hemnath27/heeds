@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: '20pt',
+    marginBottom: '10pt',
   },
   detials: {
     flexDirection: 'row',
@@ -22,11 +22,26 @@ const styles = StyleSheet.create({
     marginBottom: '20pt',
   },
   logo: {
-    width: '100pt',
+    width: '120pt',
   },
   headerText: {
     fontSize: '12pt',
   },
+
+  watermark: {
+    position: 'absolute',
+    opacity: 0.1,
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  watermarkImage: {
+    width: '600px',
+    height: '400px',
+    transform: 'rotate(0deg)',
+  },
+
   footer: {
     position: 'absolute',
     bottom: '0pt',
@@ -84,7 +99,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     marginTop: '20pt',
     position: 'absolute',
-    bottom: '200pt',
+    bottom: '150pt',
     left: '30pt',
   },
   signatureText: {
@@ -109,6 +124,15 @@ const styles = StyleSheet.create({
     fontSize: '10pt',
     justifyContent: 'center',
   },
+  invoice_detials: {
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+    marginBottom: '10pt',
+  },
+  invoice_text:
+  {
+    margin: '0',
+  },
 });
 
 const Invoice = () => {
@@ -123,12 +147,32 @@ const Invoice = () => {
     }
   };
 
+  
+    
+        
+
+    
+  
   const generatePDF = () => (
     <Document>
       <Page style={styles.page}>
+
+        {/* Watermark */}
+        <View style={styles.watermark}>
+          <Image style={styles.watermarkImage} src={Logo1} />
+        </View>
+        {/* WATER MARK END */}
+
         <View style={styles.header}>
           <Image style={styles.logo} src={Logo1} />
           <Text style={styles.headerText}>Website: www.heeds.studio | Phone: +1234567890</Text>
+        </View>
+        <View style={styles.invoice_detials}>
+        <View style={styles.section}>
+        <Text>Invoice Number: {invoiceData?.invoiceNumber}</Text>
+        <Text>Date: {invoiceData?.date}</Text>
+        <Text>Due Date: {invoiceData?.dueDate}</Text>
+      </View>
         </View>
         <View style={styles.detials}>
         <View style={styles.section}>
@@ -160,6 +204,12 @@ const Invoice = () => {
             <Text style={styles.tableCell}>{invoiceData?.product?.totalcost}</Text>
           </View>
         </View>
+
+        <View style={styles.section}>
+        <Text>Subtotal: {invoiceData?.subtotal}</Text>
+        <Text>Tax: {invoiceData?.tax}</Text>
+        <Text>Total: {invoiceData?.total}</Text>
+      </View>
 
         <View style={styles.signature}>
         <Text style={styles.signatureText}>Signature:</Text>

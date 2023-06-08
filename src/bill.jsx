@@ -44,7 +44,7 @@ const BillingForm = () => {
     <div className='container-lg'>
       {/* Top left corner */}
       <div>
-        <img className='logo_img' src={Image} alt="Logo" />
+        <img className='logo_img3' src={Image} alt="Logo" />
         <div>
           <label>From Address:</label>
           <input className='input_from' type="text" />

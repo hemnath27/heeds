@@ -9,21 +9,21 @@ import Chart from './chart';
 import Table from './table';
 import Profile from './profile';
 import Pdf from './df';
-import Bill from './bill';
+import Logins from './logins';
 import Invoice from './ai';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="#" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/test" element={<Test />} />
         <Route path="/chart" element={<Chart />} />
         <Route path="/table" element={<Table />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/df" element={<Pdf />} />
-        <Route path="/bill" element={<Bill />} />
+        <Route path="/" element={<Logins />} />
         <Route path="/ai" element={<Invoice/>} />
 
       </Routes>

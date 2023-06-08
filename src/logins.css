@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  height: 100vh;
+  
+}
+
+.row {
+  flex: 1;
+}
+
+.col-md-6 {
+  padding: 40px;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.text-center {
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  height: 50px;
+  width: 350px;
+  border-radius: 4px;
+}
+
+.form-link
+{
+    margin-top: 15px;
+    justify-content: start;
+    display: flex;
+    
+}
+
+.form-link a{
+    text-decoration: none;
+}
+
+.btn-warning {
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.logos_img
+{
+    width: 200px;
+}
