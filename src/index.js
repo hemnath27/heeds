@@ -9,6 +9,8 @@ import Chart from './chart';
 import Table from './table';
 import Profile from './profile';
 import Pdf from './df';
+import Bill from './bill';
+import Invoice from './ai';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/table" element={<Table />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/df" element={<Pdf />} />
+        <Route path="/bill" element={<Bill />} />
+        <Route path="/ai" element={<Invoice/>} />
 
       </Routes>
     </BrowserRouter>

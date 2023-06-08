@@ -13,6 +13,7 @@
     background-color: green;
     border: none;
     padding: 5px 10px;
+    margin: 10px 0;
 }
 
 .edit_button
@@ -21,6 +22,7 @@
     background-color: orange;
     border: none;
     padding: 5px 10px;
+    margin: 10px 0;
 }
 
 .export_button

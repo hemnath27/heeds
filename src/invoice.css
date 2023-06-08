@@ -1,0 +1,28 @@
+page {
+    padding: 20pt;
+  }
+
+  section {
+    marginBottom: 10pt;
+  }
+
+  tableHeader {
+    flexDirection: row;
+    borderBottomWidth: 1;
+    borderBottomColor: #000;
+    paddingBottom: 5pt;
+    marginBottom: 5pt;
+  }
+
+  tableRow {
+    flexDirection: row;
+    borderBottomWidth: 1;
+    borderBottomColor: #ddd;
+    paddingBottom: 5pt;
+    marginBottom: 5pt;
+  }
+
+  tableCell {
+    width: 20%;
+    padding: 5pt;
+  }

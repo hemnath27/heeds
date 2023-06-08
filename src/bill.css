@@ -1,0 +1,76 @@
+/* Top left corner */
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .from-address {
+    margin-top: 10px;
+  }
+  
+  /* Top right corner */
+  .to-address {
+    margin-top: 10px;
+  }
+  
+  /* Table fields */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  tfoot {
+    font-weight: bold;
+  }
+  
+  /* E-Signature */
+  .signature {
+    margin-top: 20px;
+  }
+  
+  /* Submit button */
+  button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+
+  .input_from
+  {
+    margin: 15px 15px;
+  }
+
+  .input_to
+  {
+    margin: 10px 35px;
+  }
+
+  .e-sig
+  {
+    margin: 25px 0;
+  }
+
+  .e-sing 
+  {
+    margin: 0 20px;
+  }
