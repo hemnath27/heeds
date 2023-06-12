@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './logins.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import V1 from "./image/Login-amico.png";
+import V1 from "./image/Tablet login-amico.png";
 import Logos from './image/logo.png';
 import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
